@@ -30,9 +30,34 @@ header {
   h2 {
    font-size: 1rem;
   }
+  #content{
+   background-color:blanchedalmond
+   
+
+  }
+  
+  section{ text-align: center; 
+   background-color:blanchedalmond
+
+}
+  section h2{
+   background-color: slateblue;
+   border-radius: 10px;
+   padding: 10px; 
+ }
+ h2{text-align: center;}
+ 
+ h3{
+   text-align: center;
+   background-color:slateblue;
+   border-radius:  10px;
+   padding: 3px;
+ }
+
 
  footer {
     text-align: center;
     background-color:lightslategray;
     padding: 3px;
  }
+ 
