@@ -1,0 +1,68 @@
+/* Large Screen Styles (large.css) */
+@media (min-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+    h1 {
+      font-size: 40px;
+      font-family: 'lora' sans-serif;
+      text-align: center;
+    }
+    h2 {
+      font-size: 20px;
+      font-family:Helvetica, Arial, sans-serif ;
+      color: #333;
+      padding-left: 10px;
+      display: inline;
+      float: left;
+    }
+    h3 {
+      font-size: 20px;
+      text-align: center;
+    }
+    h3 a {
+        text-decoration: none;
+        font-family:'lora' sans-serif;
+        color: #666;
+        
+    }
+
+    nav a {
+      display: inline-block;
+      margin-right: 20px;
+      text-decoration: none;
+      color: #666;
+      font-family: 'lora' sans-serif;
+      transition: color 0.3s ease;  
+    }
+    nav {
+        text-align:center;
+    }
+    nav a:visited {
+        color: #666;
+    }
+    nav a:active { 
+        color: #DEB887;
+    }
+    nav a:hover {
+        color: #00ddff;
+    }
+    img {
+      max-width: 50%;
+      height: auto;
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+    }
+    p{
+        font-family:Helvetica, Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    a{
+        text-decoration: none;
+        color: #666;
+    }
+  }

@@ -1,0 +1,63 @@
+/* Small Screen Styles (small.css) */
+@media (max-width: 767px) {
+    body {
+      font-size: 14px;
+    
+    }
+    h1 {
+      font-size: 40px;
+      font-family: 'lora' sans-serif;
+      text-align: center;
+    }
+    h2 {
+      font-size: 15px;
+      text-align: right;
+      ;font-family:Helvetica, Arial, sans-serif ;
+      color: #333;
+    }
+    a {
+        text-decoration: none;
+        color:#666
+    }
+    h3 {
+      font-size: 18px;
+    }
+    h3 a {
+        text-decoration: none;
+        font-family:'lora' sans-serif;
+        color: #666;
+
+    }
+    
+    nav a {
+      display: block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #666;
+      font-family: 'lora' sans-serif;
+      transition: color 0.3s ease;
+      text-align:center;
+    }
+    nav a:visited {
+        color: #666;
+    }
+    nav a:active { 
+        color: #DEB887;
+    }
+    nav a:hover {
+        color: #00ddff;
+    }
+    img {
+      max-width: 100%;
+      height: auto; 
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+      
+    }
+    p{
+        font-family:Helvetica, Arial, sans-serif;
+        
+    }
+  }
+  
