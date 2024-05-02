@@ -93,7 +93,7 @@ text-align: center;
  /* Initial styles for the profile image */
 header img {
    width: 160px;
-   height: 200px;
+   height: 220px;
    border-radius: 50%;
    object-fit: cover;
  }
