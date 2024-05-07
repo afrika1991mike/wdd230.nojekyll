@@ -43,6 +43,7 @@ header {
   nav.clearfix ul li a {
    text-decoration: none;
    color: black;
+  
  }
  nav.clearfix ul li{
    list-style-type: none;
@@ -119,5 +120,6 @@ header img {
    header h1 {
      margin-top: 0;
    }
+
  }
  
