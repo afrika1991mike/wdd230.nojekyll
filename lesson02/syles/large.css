@@ -1,0 +1,7 @@
+/* Styles for large screens */
+.gridArea {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Add any other styles specific to large screens */

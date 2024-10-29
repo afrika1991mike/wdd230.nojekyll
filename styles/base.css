@@ -36,7 +36,6 @@ header {
    text-align: center;
    text-decoration: none;
    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-   
    background-color:slateblue;
 
   }
@@ -76,6 +75,7 @@ font-size: x-large;
    text-decoration: none;
    color: black;
    font-size: medium;
+   
  }
  h2{text-align: center;}
  
@@ -87,6 +87,8 @@ font-size: x-large;
  }
  ul:nth-child(n+1):nth-child(-n+10)
  {background-color: violet;
+  border-radius: 10px;
+  
 }
 
 
@@ -121,5 +123,20 @@ header img {
      margin-top: 0;
    }
 
+   
+
+#content{
+  display: block;
+	font-size: 2rem;
+	font-weight:700;
+	padding: .5rem .75rem;
+}
+.clearfix a:hover, .clearfix a:active {
+	color: white;
+	background-color: black;
  }
- 
+ nav .active{
+  background-color:yellowgreen;
+ }
+
+}

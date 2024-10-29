@@ -6,14 +6,18 @@
 	nav ul li {
 		flex: 1 1 100%;
 	}
-    .card {
+  /*  .card {
         float: left;
         width: 50%;
         height: 300px;
         padding: 20px;
         box-sizing: border-box;
+        overflow: auto;
         
-    }
-    
+    } */
+footer{
+
+    overflow: auto;
+}
       
 }
