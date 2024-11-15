@@ -373,7 +373,6 @@ h1 span {
 }
     
 
-
 /* For screens smaller than 768px */
 @media only screen and (max-width: 768px) {
     /* Stack header layout vertically */
@@ -472,3 +471,77 @@ h1 span {
 
 
 
+/* rounded corners - boxmodel */
+.rocorn {border-radius: 15px 150px;}
+.rocorn:hover{box-shadow: 0 0 50px #333;}
+
+
+
+
+/* Main Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Sidebar 1/4th and main content 3/4th */
+    gap: 16px; /* Space between columns */
+    align-items: start; /* Aligns sidebars and content to the top */
+    grid-template-rows: auto; /* Allow sidebars to grow based on content height */
+    background-color: DodgerBlue;
+    padding: 10px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #f9f9f9;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Main Content Area */
+.main-content {
+    background-color: #ffffff;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Photo Gallery Grid */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 photos per row */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 16px;
+}
+
+.photo-gallery figure {
+    text-align: center;
+}
+
+.photo-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Images */
+.photo-gallery img.hover:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.photo-gallery img.rocorn {
+    border-radius: 15px 150px;
+}
+
+/* Responsive Layout for Mobile */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .photo-gallery {
+        grid-template-columns: 1fr; /* Single column for images */
+        grid-template-rows: unset; /* Allow images to stack naturally */
+    }
+}

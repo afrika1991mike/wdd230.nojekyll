@@ -86,3 +86,41 @@
     }
 
 }
+
+
+@media (min-width: 1024px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr; /* Sidebar and main content */
+        grid-template-areas:
+            "discover content"  /* First sidebar and main content */
+            "other content"     /* Second sidebar and main content */
+            "upcoming content"; /* 'Upcoming Events' at the bottom */
+        gap: 16px; /* Space between grid items */
+    }
+
+    /* Assign grid areas */
+    .sidebar.discover {
+        grid-area: discover; /* 'Discover Kigali' */
+    }
+
+    .sidebar.other {
+        grid-area: other; /* Second sidebar */
+    }
+
+    .sidebar.upcoming-events {
+        grid-area: upcoming; /* 'Upcoming Events' */
+        align-self: end; /* Align at the bottom */
+    }
+
+    .main-content {
+        grid-area: content; /* Main content */
+    }
+}
+
+/* Hover effect */
+.hover:hover {
+    box-shadow: 0 0 80px #666; /* Increase the intensity and size */
+    filter: brightness(1.5);   /* Brightens the image to 150% */
+    transition: all;
+}

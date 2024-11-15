@@ -23,7 +23,8 @@
       🕶️
     </div>
   </header>
-  <a id="menu" href="#"></a>
+  <a id="menu" href="#" aria-label="Toggle menu"></a>
+
   <nav>
 	<ul class="navigation">
 		<li><a href="home.html" class="active">Home</a></li>
@@ -32,6 +33,15 @@
 		<li><a href="form.html">Form</a></li>
 	</ul>
 </nav>
+<div class="hero">
+  <picture>
+    <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+    <source srcset="images/hero-medium.webp" media="(min-width: 501px) and (max-width: 1274px)">
+    <source srcset="images/hero-large.webp" media="(min-width: 1275px)">
+    <img src="images/hero-large.webp" alt="hero photo" width="500" height="250">
+  </picture>
+  <span>New Mexico Temple</span>
+</div>
   <main>
     <h2>
       WDD230: Web Frontend Developement 
@@ -48,6 +58,7 @@
       <li>Week 06: <a href="#">Title </a></li>
     </ul>
     </section >
+    <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
   </main>
   <section class="card">
     <h2>Information</h2>
@@ -55,9 +66,9 @@
       <li>Michael Afurika</li>
       <li>Kigali, Rwanda</li>
       <li>&#9728; 76 &#8451; - Sunshine</li>
-      <li>Page Visits: 15</li>
     </ul>
   </section>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.4603374513736!2d30.107879273732397!3d-1.9699390367528786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca64fc7cb6bdd%3A0x1217fae35e7296d7!2sKK%2012%20Ave%2C%20Kigali%2C%20Rwanda!5e0!3m2!1sen!2sru!4v1731582332154!5m2!1sen!2sru" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   <footer>
     <p>
       &copy; <span id="date1"></span> Michael Afurika | Kigali | Rwanda<br><br>Last Modification: <span id="date2"></span>
@@ -66,6 +77,7 @@
 <script src="scripts/getDates.js"></script>
 <script src="scripts/hamburger.js"></script>
 <script src="scripts/darkerMode.js"></script>
+<script src="scripts/localStorage.js"></script>
 </body>
 </html>
 

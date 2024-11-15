@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - Kigali Chamber of Commerce</title>
+    <meta name="description" content="Discover attractions, events, and resources from Kigali Chamber of Commerce.">
+    <meta name="author" content="Michael">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <div class="main_header">
+            <div id="logo">
+                <img src="images/logo.jpg" alt="Kigali Chamber of Commerce logo">
+                <div>
+                    <h1>Kigali</h1>
+                    <h2>Chamber of Commerce</h2>
+                </div>
+            </div>
+            <div id="social_media">
+                <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook Logo"></a>
+                <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="LinkedIn Logo"></a>
+            </div>
+            <nav>
+                <button id="hamburger-button"><span>&#9776;</span><span>&#9776;</span></button>
+            </nav>
+        </div>
+        <nav>
+            <ul id="primary-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li class="join"><a href="#">Join</a></li>
+               
+            </ul>
+        </nav>
+        <div id="date_today">
+            <p><span id="announcement"></span></p>
+            <p class="current"><span id="current_date"></span></p>
+        </div>
+    </header>
+    <main>
+        <div class="grid-container">
+            <!-- Sidebar Content -->
+            <aside class="sidebar discover">
+                <h3>Discover Kigali</h3>
+                <ul>
+                    <li><strong>Demographics:</strong> Population: 15.2M</li>
+                    <li><strong>Events:</strong> Local fairs, trade shows, Gikondo expo</li>
+                    <li><strong>Attractions:</strong> Convention Center, Museums</li>
+                    <li><strong>Statistics:</strong> Rapid growth in business sectors</li>
+                </ul>
+            </aside>
+            
+            <aside class="sidebar other">
+                <h3>Attractions & Points of Interest</h3>
+                <ul>
+                    <li><strong>Kigali Convention Center:</strong> Modern conference and events hub</li>
+                    <li><strong>Inema Art Center:</strong> Local art exhibitions</li>
+                    <li><strong>Nyamirambo Cultural Tour:</strong> Explore Kigali's rich culture</li>
+                    <li><strong>Kigali Genocide Memorial:</strong> Historical site</li>
+                </ul>
+            </aside>
+            
+            <aside class="sidebar upcoming-events">
+                <h3>Upcoming Events</h3>
+                <ul>
+                    <li><strong>Trade Fair:</strong> International Business Expo</li>
+                    <li><strong>Food Festival:</strong> Local Cuisine Tasting</li>
+                    <li><strong>Concert:</strong> Kigali Music Festival</li>
+                    <li><strong>Expo:</strong> Technology and Innovation Expo</li>
+                </ul>
+            </aside>
+        <aside class="sidebar visit-message">
+                <h3>Welcome Back!</h3>
+                <p id="visitMessage"></p>
+        </aside>
+            
+            
+            <!-- Main Content -->
+            <section class="main-content">
+                <h3>Local Photos</h3>
+                <div class="photo-gallery">
+                    <figure>
+                        <img class="hover" src="images/attraction1.webp" loading="lazy" width="250" height="167" alt="Nyungwe Forest Sky Bridge">
+                        <figcaption>Nyungwe forest sky bridge</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="rocorn" src="images/attraction2.webp" loading="lazy" width="250" height="167" alt="Baby gorilla naming ceremony">
+                        <figcaption>Baby gorilla naming ceremony</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="hover" src="images/attraction3.webp" loading="lazy" width="250" height="167" alt="Visit gorillas in Rwanda">
+                        <figcaption>Visit gorillas</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="hover" src="images/attraction4.webp" loading="lazy" width="250" height="167" alt="kigali convention image">
+                        <figcaption>Kigali Convention Center</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="hover" src="images/attraction5.webp" loading="lazy" width="250" height="167" alt="lake kivu image">
+                        <figcaption>Lake Kivu</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="rocorn" src="images/attraction6.webp" loading="lazy" width="250" height="167" alt="kigali genocide Memorial image">
+                        <figcaption>Kigali Genocide Memorial</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="hover" src="images/attraction8.webp" loading="lazy" width="250" height="167" alt="king Museum image">
+                        <figcaption>king Museum</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="hover" src="images/attraction10.webp" loading="lazy" width="250" height="167" alt="imena art Museum image">
+                        <figcaption> Imena art </figcaption>
+                    </figure>
+                    <figure>
+                        <img class="hover" src="images/attraction11.webp" loading="lazy" width="250" height="167" alt="akagera safari image">
+                        <figcaption>Akagera safari</figcaption>
+                    </figure>
+                    
+                    
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="main_footer">
+            <div class="footer_logo">
+                <img src="images/logo.jpg" alt="Kigali Chamber of Commerce Logo">
+                <div class="address">
+                    <h2>Kigali Chamber of Commerce</h2>
+                    <p>Street 12KG Avenue</p>
+                    <p>Kigali City, Rwanda, 12KG</p>
+                </div>
+            </div>
+            <div class="contact_footer">
+                <p>📧 send@email.com</p>
+                <p>📞 (250) 788711391</p>
+                <div class="map_container">
+                    <div class="location_map">
+                        <a href="#"><img src="images/google-map.png" alt="Google Map Location Icon"></a>
+                        <a href="#"><p>Location on Map</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_info_small">
+            <div class="copyright">
+                <span id="copyright"></span> Kigali Chamber of Commerce
+                <h3>Michael Afurika</h3>
+                <p>WDD 230 Project</p>
+                <p>Last Modification: <span id="lastupdate"></span></p>
+            </div>
+        </div>
+        <div class="footer_info_medium">
+            <div class="copyright">
+                <span id="copyright1"></span> Kigali Chamber of Commerce | Michael Afurika | WDD 230 Project
+                <p>Last Modification: <span id="lastupdate1"></span></p>
+            </div>
+        </div>
+        <div class="footer_info_large">
+            <div class="copyright">
+                <span id="copyright2"></span> Kigali Chamber of Commerce | Michael Afurika | WDD 230 Project | Last Modification: <span id="lastupdate2"></span>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/localStorage.js"></script>
+</body>
+</html>
