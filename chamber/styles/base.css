@@ -495,6 +495,7 @@ h1 span {
     padding: 16px;
     border: 1px solid #ddd;
     border-radius: 8px;
+    
 }
 
 /* Main Content Area */
@@ -543,5 +544,118 @@ h1 span {
     .photo-gallery {
         grid-template-columns: 1fr; /* Single column for images */
         grid-template-rows: unset; /* Allow images to stack naturally */
+    }
+}
+
+
+/* General font family for sidebars */
+.sidebar {
+    font-family: 'Arial', sans-serif;
+    padding: 15px;
+    background-color: #f9f9f9; /* Light background for clarity */
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: transform 0.2s, box-shadow 0.2s; /* Add smooth hover effect */
+}
+
+/* Center headings in sidebars */
+.sidebar h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Style the list items */
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin: 8px 0;
+}
+
+/* Hover effect for grid container content */
+.grid-container .sidebar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Add subtle hover effect for individual list items */
+.sidebar ul li:hover {
+    color: #007BFF; /* Change text color on hover */
+    cursor: pointer;
+}
+
+figcaption {
+    font-family:sans-serif;
+    padding: 10px;
+    
+}
+/* General styling for figcaption */
+figure figcaption {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 8px;
+    color: #333;
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Hover effect on figcaption */
+figure:hover figcaption {
+    color: #007BFF; /* Changes text color on hover */
+    transform: scale(1.1); /* Slightly enlarges the text */
+    font-weight: bold; /* Makes the text bold */
+    cursor: pointer;
+}
+.main-content h3 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size:x-large;
+    color: #333;
+}
+
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+    .main_header {
+        display: grid; /* Use grid layout for small screens */
+        grid-template-columns: 1fr auto; /* Left for logo, right for social icons */
+        align-items: center; /* Vertically center content */
+        padding-bottom: 50px;
+    }
+
+    #logo {
+        display: flex; /* Keep logo layout as flex */
+        align-items: center;
+        justify-content: flex-start; /* Ensure logo is on the left */
+    }
+
+    #logo img {
+        height: 50px; /* Adjust size */
+        margin-right: 100px;
+        position: relative;
+        top: 100px; /* Slightly move the logo image down */
+    }
+
+    #logo h1 {
+        font-size: 15px; /* Reduce font size for smaller screens */
+        margin-left: 70px;
+        position: relative;
+        top: 15px;
+        flex-grow: 1; /* Allow h1 to take up remaining space */
+    }
+
+    #social_media {
+        display: flex; /* Social icons still in row */
+        justify-content: flex-end; /* Align icons to the right */
+    }
+
+    #social_media a img {
+        height: 25px; /* Resize social icons */
+        margin-left: 10px;
+        position: relative;
+        top: 40px;
     }
 }
