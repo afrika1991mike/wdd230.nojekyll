@@ -641,7 +641,7 @@ figure:hover figcaption {
 
     #logo h1 {
         font-size: 15px; /* Reduce font size for smaller screens */
-        margin-left: 70px;
+        margin-left: 95px;
         position: relative;
         top: 15px;
         flex-grow: 1; /* Allow h1 to take up remaining space */
@@ -658,4 +658,97 @@ figure:hover figcaption {
         position: relative;
         top: 40px;
     }
+    @media only screen and (max-width: 768px) {
+        /* Other existing rules */
+    
+        /* Disable hover effect for small screens */
+        nav ul li a:hover {
+            background-color: transparent;  /* Remove background color change */
+            color: white;  /* Keep text color white (or adjust as needed) */
+            transition: none;  /* Remove transition effect */
+        }
+    }
+    
+      
+    
 }
+
+form fieldset {
+    margin: 3rem 0;
+    border: 1px solid transparent;
+    background-color:#DAE3AA;
+    color: #494A40;
+    border-radius: 10px;
+  }
+  form legend {
+    color:#494A40;
+    position: relative;
+    top: -1rem;
+    font-weight: bold;
+  }
+  form label.top, form div {
+    display: block;
+    margin-bottom: 20px;
+    color: #024059;
+    font-size: 1rem;
+  }
+  
+  form label.top input, form label.top select, form label.top textarea {
+    display: block;
+    font-size: 1rem;
+    border: 2px solid #007BFF;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #494A40;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  form label.sbs {
+    display: block;
+    padding: .1rem 0;
+    color: #011C26;
+  }
+  form input.submitBtn {
+    display: block;
+    border: none;
+    background-color: #1c3eb0;
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    width: 200px;
+    margin:  auto;
+    font-family:'Courier New', Courier, monospace;
+    
+  }
+  form label.top input:required{
+    border-left: #007BFF solid 6px;
+  }
+  form label.top input:required:valid { 
+    border-left: 6px solid #9EAD5A;
+  }
+  
+  form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+  .formCenter {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  
+   .formCenter h2 {
+     margin: 0;
+     padding: 0;
+     text-align: center;
+     background-color: white;
+     color: #494A40;
+  }
+  
+  .responsive li {
+    display: block;
+  }
+  
+    
+
+

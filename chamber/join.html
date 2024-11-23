@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - Kigali Chamber of Commerce</title>
+    <meta name="description" content="Discover attractions, events, and resources from Kigali Chamber of Commerce.">
+    <meta name="author" content="Michael">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Join - Kigali Chamber of Commerce">
+    <meta property="og:description" content="Join the Kigali Chamber of Commerce today to connect with a thriving business community, access valuable resources, and unlock growth opportunities.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://afrika1991mike.github.io/wdd230/chamber/join.html"> 
+    <meta property="og:image" content="https://afrika1991mike.github.io/wdd230/chamber/images/attraction1.webp">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <div class="main_header">
+            <div id="logo">
+                <img src="images/logo.jpg" alt="Kigali Chamber of Commerce logo">
+                <div>
+                    <h1>Kigali chamber of Commerce</h1>
+                </div>
+            </div>
+            <div id="social_media">
+                <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook Logo"></a>
+                <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="LinkedIn Logo"></a>
+            </div>
+            <nav>
+                <button id="hamburger-button"><span>&#9776;</span><span>&#9776;</span></button>
+            </nav>
+        </div>
+        <nav>
+            <ul id="primary-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li class="join"><a href="join.html">Join</a></li>
+               
+            </ul>
+        </nav>
+        <div id="date_today">
+            <p><span id="announcement"></span></p>
+            <p class="current"><span id="current_date"></span></p>
+        </div>
+    </header>
+    <main>
+        <div class="formCenter">
+            <h2>Become a Member</h2>
+            
+          </div>
+          <form method="get" action="thankyou.html">
+            <fieldset>
+              <legend>Essential Information</legend>
+              <label class="top"> Full Name* <input type="text" name="fullname" pattern="[\sA-Za-z]{5,}" required></label>
+              <label class="top"> Last Name* <input type="text" name="lastname" pattern="[\sA-Za-z]{5,}" required></label>
+              <label class="top"> Business Position <input type="text" name="lastname" placeholder="7 characters minimum" pattern="[\sA-Za-z]{5,}" required></label>
+              <label class="top"> Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+              <label class="top"> Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+              <label class="top"> Business name* <input type="text" name="business_name" required></label>
+            </fieldset>
+      
+      <fieldset>
+              <legend>Select Membership</legend>
+              
+              <div>
+                <label class="sbs"><input type="radio" name="danger" value="nonprofit"> Non Profit</label>
+                <label class="sbs"><input type="radio" name="danger" value="bronze"> Bronze</label>
+                <label class="sbs"><input type="radio" name="danger" value="silver"> Silver</label>
+        <label class="sbs"><input type="radio" name="danger" value="gold"> Gold</label>
+              </div>
+              <label class="top">Business Description:
+                <textarea name="comment" rows="5"></textarea></label>
+            </fieldset>
+            <!--  hidden timestamp  -->
+            <input type="hidden" id="formTimestamp" name="formTimestamp">
+             <input type="submit" value="Report My Storm" class="submitBtn">
+      
+          </form> 
+    </main>
+    <footer>
+        <div class="main_footer">
+            <div class="footer_logo">
+                <img src="images/logo.jpg" alt="Kigali Chamber of Commerce Logo">
+                <div class="address">
+                    <h2>Kigali Chamber of Commerce</h2>
+                    <p>Street 12KG Avenue</p>
+                    <p>Kigali City, Rwanda, 12KG</p>
+                </div>
+            </div>
+            <div class="contact_footer">
+                <p>📧 send@email.com</p>
+                <p>📞 (250) 788711391</p>
+                <div class="map_container">
+                    <div class="location_map">
+                        <a href="#"><img src="images/google-map.png" alt="Google Map Location Icon"></a>
+                        <a href="#"><p>Location on Map</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_info_small">
+            <div class="copyright">
+                <span id="copyright"></span> Kigali Chamber of Commerce
+                <h3>Michael Afurika</h3>
+                <p>WDD 230 Project</p>
+                <p>Last Modification: <span id="lastupdate"></span></p>
+            </div>
+        </div>
+        <div class="footer_info_medium">
+            <div class="copyright">
+                <span id="copyright1"></span> Kigali Chamber of Commerce | Michael Afurika | WDD 230 Project
+                <p>Last Modification: <span id="lastupdate1"></span></p>
+            </div>
+        </div>
+        <div class="footer_info_large">
+            <div class="copyright">
+                <span id="copyright2"></span> Kigali Chamber of Commerce | Michael Afurika | WDD 230 Project | Last Modification: <span id="lastupdate2"></span>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/localStorage.js"></script>
+    <script src="scripts/formTimestamp.js"></script>
+</body>
+</html>

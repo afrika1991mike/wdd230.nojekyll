@@ -1,0 +1,106 @@
+/* Root Variables */
+:root {
+  --main-font: Arial, sans-serif;
+  --primary-color: #2c3e50;
+  --secondary-color: #ecf0f1;
+}
+main {
+  width: 90%;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+h1 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-align: center;
+}label {
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+input, button, output {
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+button {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  
+}
+
+button:hover {
+  background: #34495e;
+}
+
+output {
+  font-weight: bold;
+}
+#feeback {
+  margin-top: 10px;
+  font-size: 14px;
+  display: none;
+}
+
+
+
+
+
+.pinfo {
+  margin: 8px auto;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #0d0d0d;
+ }
+ .form-group {
+   margin-bottom: 1rem;
+ }
+ .form-control {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  font-weight: bold;
+  color: #6C6262;
+  background-color: #fff;
+  background-image: none;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+}
+.form-control::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+
+.form-control:focus {
+  color: #696060;
+  background-color: #fff;
+  border-color: #5cb3fd;
+  outline: none;
+}
+

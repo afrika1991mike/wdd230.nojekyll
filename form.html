@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael-WDD230-Web Frontend Developement</title> 
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Michael's Web Form - User Information">
+<meta property="og:description" content="Fill out the user information form on Michael's website.">
+<meta property="og:image" content="images/hero-large.webp">
+<meta property="og:url" content="https://afrika1991mike.github.io/wdd230/chamber/join.html">
+<meta property="og:type" content="website">
+  <link rel="googlefonts" href="https://fonts.googleapis.com">
+  <link rel="fontstatic" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sofia+Sans&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet"  href="styles/base.css">
+  <link rel="stylesheet"  href="styles/larger.css">
+  <link rel="stylesheet"   href="styles/form.css">
+</head>
+<body>
+  <header>
+    <img src="images/mike_pic.jpg" alt="michael profile picture" width="75" height="100">
+    <h1> Michael Afurika </h1>
+    <div id="mode">
+      🕶️
+    </div>
+  </header>
+  <a id="menu" href="#" aria-label="Toggle menu"></a>
+
+  <nav>
+	<ul class="navigation">
+		<li><a href="home.html">Home</a></li>
+		<li><a href="chamber/index.html">Chamber</a></li>
+		<li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+		<li><a href="form.html" class="active">Form</a></li>
+	</ul>
+</nav>
+<div class="hero">
+  <picture>
+    <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+    <source srcset="images/hero-medium.webp" media="(min-width: 501px) and (max-width: 1274px)">
+    <source srcset="images/hero-large.webp" media="(min-width: 1275px)">
+    <img src="images/hero-large.webp" alt="hero photo" width="500" height="250">
+  </picture>
+  <span>New Mexico Temple</span>
+</div>
+  <main>
+
+    <form action="record.html" method="get" class="user-form" id="user-form">
+      <h1>User Information Form</h1>
+
+      <!-- Username -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required
+             pattern="[a-zA-Z0-9]{8,}" 
+             title="Password must be at least 8 characters long and contain only alphanumeric characters.">
+
+      <!-- Confirm Password -->
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required
+             pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" 
+             title="Please enter a valid BYUI email address (e.g., user@byui.edu)."
+             placeholder="example@byui.edu">
+             <div id="feedback"></div>
+
+      <!--Page Rating-->
+      <div class="pinfo">Rate our overall services</div>
+  
+
+      <div class="form-group">
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-heart"></i></span>
+         <select class="form-control" id="rate">
+            <option value="1star">1</option>
+            <option value="2stars">2</option>
+            <option value="3stars">3</option>
+            <option value="4stars">4</option>
+            <option value="5stars">5</option>
+            <option value="6stars">6</option>
+            <option value="7stars">7</option>
+            <option value="8stars">8</option>
+            <option value="9starts">9</option>
+            <option value="10starts">10</option>
+          </select>
+      <!-- Submit Button -->
+        </div>
+        </div>
+      </div>
+       <div>
+        <div id="feedback"></div>
+        <button type="submit">Send my Review</button>
+       </div>
+    </form>
+  
+  </main>
+  <footer>
+    <p>
+      &copy; <span id="date1"></span> Michael Afurika | Kigali | Rwanda<br><br>Last Modification: <span id="date2"></span>
+    </p>
+  </footer>
+<script src="scripts/getDates.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/darkerMode.js"></script>
+<script src="scripts/localStorage.js"></script>
+</body>
+</html>
