@@ -49,18 +49,38 @@
     <main>
         <div class="formCenter">
             <h2>Become a Member</h2>
-            
           </div>
+          <div class="membership-container"></div>
+          <!-- Form Section -->
           <form method="get" action="thankyou.html">
             <fieldset>
-              <legend>Essential Information</legend>
-              <label class="top"> Full Name* <input type="text" name="fullname" pattern="[\sA-Za-z]{5,}" required></label>
-              <label class="top"> Last Name* <input type="text" name="lastname" pattern="[\sA-Za-z]{5,}" required></label>
-              <label class="top"> Business Position <input type="text" name="lastname" placeholder="7 characters minimum" pattern="[\sA-Za-z]{5,}" required></label>
-              <label class="top"> Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
-              <label class="top"> Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
-              <label class="top"> Business name* <input type="text" name="business_name" required></label>
-            </fieldset>
+                <legend>Essential Information</legend>
+                
+                <label class="top" for="first_name">First Name* 
+                  <input type="text" id="first_name" name="first_name" pattern="[A-Za-z\s]{5,}" required>
+                </label>
+                
+                <label class="top" for="last_name">Last Name* 
+                  <input type="text" id="last_name" name="last_name" pattern="[A-Za-z\s]{5,}" required>
+                </label>
+                
+                <label class="top" for="business_position">Business Position 
+                  <input type="text" id="business_position" name="business_position" placeholder="7 characters minimum" pattern="[A-Za-z\s]{7,}">
+                </label>
+                
+                <label class="top" for="email">Email* 
+                  <input type="email" id="email" name="email" placeholder="someone@gmail.com" required>
+                </label>
+                
+                <label class="top" for="phone">Phone* 
+                  <input type="tel" id="phone" name="phone" placeholder="1235551234" required>
+                </label>
+                
+                <label class="top" for="business_name">Business Name* 
+                  <input type="text" id="business_name" name="business_name" required>
+                </label>
+              </fieldset>
+              
       
       <fieldset>
               <legend>Select Membership</legend>
@@ -71,12 +91,14 @@
                 <label class="sbs"><input type="radio" name="danger" value="silver"> Silver</label>
         <label class="sbs"><input type="radio" name="danger" value="gold"> Gold</label>
               </div>
+              <!-- Membership Benefits Display -->
+              <div id="membershipBenefits"></div>
               <label class="top">Business Description:
                 <textarea name="comment" rows="5"></textarea></label>
             </fieldset>
             <!--  hidden timestamp  -->
             <input type="hidden" id="formTimestamp" name="formTimestamp">
-             <input type="submit" value="Report My Storm" class="submitBtn">
+             <input type="submit" value="Submit my Membership" class="submitBtn">
       
           </form> 
     </main>
@@ -124,5 +146,6 @@
     <script src="scripts/script.js"></script>
     <script src="scripts/localStorage.js"></script>
     <script src="scripts/formTimestamp.js"></script>
+    <script src="scripts/membershipBenefits.js"></script>
 </body>
 </html>

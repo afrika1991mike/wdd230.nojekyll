@@ -667,9 +667,7 @@ figure:hover figcaption {
             color: white;  /* Keep text color white (or adjust as needed) */
             transition: none;  /* Remove transition effect */
         }
-    }
-    
-      
+    } 
     
 }
 
@@ -748,6 +746,14 @@ form fieldset {
   .responsive li {
     display: block;
   }
+  #membershipBenefits {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #555;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
   
     
 
