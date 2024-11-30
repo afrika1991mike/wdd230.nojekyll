@@ -4,14 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kigali Chamber of Commerce</title>
-        <meta name="description" content="This page is the homepage for Kigali Chamber of Commerce.">
+        <meta name="description" content="This page is the directory page for Kigali Chamber of Commerce.">
         <meta name="author" content="Michael">
         <link rel="icon" href="images/favicon.png">
-        <meta property="og:title" content="Kigali Chamber of Commerce">
-    <meta property="og:description" content="Discover attractions,investment opportunities,events, and resources from Kigali Chamber of Commerce.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://afrika1991mike.github.io/wdd230/chamber/index.html"> 
-    <meta property="og:image" content="https://afrika1991mike.github.io/wdd230/chamber/images/attraction1.webp">
+        <meta property="og:title" content="Kigali Business Directory | Kigali Chamber of Commerce">
+<meta property="og:description" content="Explore Kigali's business community. Find companies, services, and investment opportunities in our comprehensive directory.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://afrika1991mike.github.io/wdd230/chamber/directory.html">
+<meta property="og:image" content="https://afrika1991mike.github.io/wdd230/chamber/images/attraction1.webp">
+<meta property="og:site_name" content="Kigali Chamber of Commerce">
+
         <link rel="stylesheet" href="styles/large.css">
         <link rel="stylesheet" href="styles/base.css">
     </head>
@@ -34,9 +36,9 @@
         </div>
         <nav>
             <ul id="primary-nav">
-                <li class="join"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
+                <li class="join"><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>    
             </ul>
         </nav>
@@ -46,24 +48,16 @@
         </div>
     </header>
     <main>
-        <div class="event">event goes here</div>
-    
-        <!-- Hero section with hero image and call-to-action button -->
-        <div class="featured">
-            <img src="images/hero.webp" alt="Hero Image" class="hero-image">
-            <button class="cta-button" onclick="window.location.href='#'">Join the Chamber</button>
-
+        <div class="menu">
+          <button id="grid">⏹️ Grid</button>
+          <button id="list">📄 List</button>
         </div>
-    
-        <div class="right-column">
-            <div class="spotlight1">spotlight goes here</div>
-            <div class="spotlight2">spotlight2 goes here</div>
-            <div class="spotlight3">spotlight3 goes here</div>
-        </div>
-        <div class="weather">weather goes here</div>
-        <div class="news-update">news update goes here</div>
-        <div class="join_here">join information goes here</div>
-    </main>
+        <hr>
+        <article id="members" class="grid">
+        <h2 class="sr-only">Member Directory</h2>
+          <!-- Dynamic content will go here -->
+        </article>
+      </main>
     
         <footer>
             <div class="main_footer">
@@ -102,5 +96,6 @@
             </div></div>      
                 </footer>
     <script src="scripts/script.js"></script>
+    <script src="scripts/viewToggle.js"></script>
 </body>
 </html>

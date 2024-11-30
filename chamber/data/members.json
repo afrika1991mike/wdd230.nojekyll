@@ -1,0 +1,98 @@
+[
+  {
+      "name": "Rwanda Development Board",
+      "address": "123 Kigali Rd, Kigali, Rwanda",
+      "phone": "(+250) 123-4567",
+      "website": "https://rdb.rw",
+      "image": "rdb.png",
+      "membershipLevel": "Platinum"
+  },
+  {
+      "name": "Green Energy",
+      "address": "45 Innovation Drive, Kigali",
+      "phone": "(250) 788-654321",
+      "website": "https://solektra.rw",
+      "image": "Green_energy.jpg",
+      "membershipLevel": "Silver"
+  },
+  {
+      "name": "Tourist Rwanda",
+      "address": "678 Eco Avenue, Kigali",
+      "phone": "(250) 788-987654",
+      "website": "https://rwandaecocompany.com",
+      "image": "tourist.png",
+      "membershipLevel": "Platinum"
+  },
+  {
+      "name": "Irembo Tech",
+      "address": "123 Main Street, Kigali",
+      "phone": "(250) 123-4567",
+      "website": "https://irembo.gov.rw",
+      "image": "Irembo.jpg",
+      "membershipLevel": "Gold"
+  },
+  {
+      "name": "Rwandair",
+      "address": "456 Side Street, Kigali",
+      "phone": "(250) 987-6543",
+      "website": "https://www.rwandair.com",
+      "image": "Rwandair.jpg",
+      "membershipLevel": "Silver"
+  },
+  {
+      "name": "IZI e-bus",
+      "address": "123 Main Street, Kigali",
+      "phone": "(250) 123-4567",
+      "website": "https://www.izi-go.com",
+      "image": "e_bus.jpg",
+      "membershipLevel": "Gold"
+  },
+  {
+      "name": "MTN Rwanda",
+      "address": "456 Side Street, Kigali",
+      "phone": "(250) 987-6543",
+      "website": "https://www.mtn.co.rw",
+      "image": "MTN.jpg",
+      "membershipLevel": "Silver"
+  },
+  {
+    "name": "Nation Bank Of Rwanda",
+    "address": "123 Market Street, Kigali",
+    "phone": "(250) 788-123456",
+    "website": "https://www.abcindustries.com",
+    "image": "fintech.jpg",
+    "membership": "Gold"
+  },
+  {
+    "name": "XYZ Tech Solutions",
+    "address": "45 Innovation Drive, Kigali",
+    "phone": "(250) 788-654321",
+    "website": "https://www.xyztechsolutions.com",
+    "image": "health.jpg",
+    "membership": "Silver"
+  },
+  {
+    "name": "Green World",
+    "address": "678 Eco Avenue, Kigali",
+    "phone": "(250) 788-987654",
+    "website": "https://www.greenworld.com",
+    "image": "green_world1.jpg",
+    "membership": "Platinum"
+  },
+  {
+    "name": "ABC Industries",
+    "address": "123 Market Street, Kigali",
+    "phone": "(250) 788-123456",
+    "website": "https://www.abcindustries.com",
+    "image": "medecine.jpg",
+    "membership": "Gold"
+  },
+  {
+    "name": "Ayz Tech Solutions",
+    "address": "45 Innovation Drive, Kigali",
+    "phone": "(250) 788-654321",
+    "website": "https://www.xyztechsolutions.com",
+    "image": "robot.jpg",
+    "membership": "Silver"
+  }
+]

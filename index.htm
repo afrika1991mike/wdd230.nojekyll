@@ -9,7 +9,7 @@
   <link rel="googlefonts" href="https://fonts.googleapis.com">
   <link rel="fontstatic" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sofia+Sans&display=swap" rel="stylesheet">
-  <link rel="icon" href="images/favicon.png">
+  <link rel="icon" href="favicon.icon">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet"  href="styles/base.css">
   <link rel="stylesheet"  href="styles/larger.css">
@@ -39,34 +39,30 @@
     <source srcset="images/hero-large.webp" media="(min-width: 1275px)">
     <img src="images/hero-large.webp" alt="hero photo" width="500" height="250">
   </picture>
-  <span>New Mexico Temple</span>
+  <span> Temple</span>
 </div>
   <main>
     <h2>
       WDD230: Web Frontend Developement 
     </h2>
     <hr>
-    <section class="card">
-    <h3>Learning Activities</h3>
-    <ul>
-      <li>Week 01: <a href="week01/chamber-site-plan.html">chamber-site-plan </a></li>
-      <li>Week 02: <a href="week02/design.html">design principles</a></li>
-      <li>Week 03: <a href="#">Title</a></li>
-      <li>Week 04: <a href="#">Title </a></li>
-      <li>Week 05: <a href="#">Title </a></li>
-      <li>Week 06: <a href="#">Title </a></li>
-    </ul>
-    </section >
-    <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
-  </main>
+     <!-- Section for dynamically generated content -->
   <section class="card">
-    <h2>Information</h2>
-    <ul>
-      <li>Michael Afurika</li>
-      <li>Kigali, Rwanda</li>
-      <li>&#9728; 76 &#8451; - Sunshine</li>
-    </ul>
+    <h2>Card Title</h2>
+    <!-- This will be populated dynamically by JavaScript -->
   </section>
+    <p class="visits-info">
+    <span class="label">Number of Visits: </span><span class="visits"></span>
+    </p>
+  </main>
+  <h1 class="information-title">Information</h1>
+  <div class="card">
+  <h2 id="town">loading...</h2>
+  <img id="graphic" src="placeholder.jpg" alt="Default image">
+  <p id="description"></p>
+  <p id="temperature"></p>
+</div>
+  
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.4603374513736!2d30.107879273732397!3d-1.9699390367528786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca64fc7cb6bdd%3A0x1217fae35e7296d7!2sKK%2012%20Ave%2C%20Kigali%2C%20Rwanda!5e0!3m2!1sen!2sru!4v1731582332154!5m2!1sen!2sru" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   <footer>
     <p>
@@ -77,6 +73,8 @@
 <script src="scripts/hamburger.js"></script>
 <script src="scripts/darkerMode.js"></script>
 <script src="scripts/localStorage.js"></script>
+<script src="scripts/weather.js"></script>
+<script src="scripts/links.js"></script>
 </body>
 </html>
 

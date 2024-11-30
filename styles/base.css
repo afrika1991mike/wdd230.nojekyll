@@ -276,3 +276,81 @@ In most WDD courses there is a requirement to use a separate file. This part wou
   }
 }
 
+.card {
+  background-color: #f6f0da;
+  border-radius: 10px;
+  text-align: center;
+}
+.information-title {
+  text-align: center;
+  margin: 20px 0; 
+  background-color:slateblue;
+   border-radius:  10px;
+   padding: 3px;
+}
+.card #temperature {
+  font-size: 2rem;
+  color: #537279;
+  margin: .3rem;
+  padding: 3px;
+}
+.card #description {
+  text-transform: capitalize;
+  color: #3a5250;
+  margin: .3rem;
+  padding: 3px;
+}
+.card #town {
+  font-size: 2rem;
+  color: #537279;
+  margin: .3rem;
+}
+
+
+
+/* Basic styling for the card section */
+.card {
+  max-width: 800px;
+  margin: 0 auto; /* Center-align the card section */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Styling for the section title */
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+/* Styling for the unordered list */
+.card ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+}
+/* Styling for the list items */
+.card li {
+  margin-bottom: 10px; /* Add spacing between list items */
+  line-height: 1; /* Better readability */
+}
+
+/* Styling for links */
+.card a {
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+/* Hover effect for links */
+.card a:hover {
+  color: #0056a3; /* Darker shade of blue */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Align the week and links on the same line */
+.card li strong {
+  text-align: right; /* Align the week label to the right */
+  margin-right: 10px; /* Add spacing after week label */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}

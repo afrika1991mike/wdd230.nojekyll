@@ -124,3 +124,11 @@
     filter: brightness(1.5);   /* Brightens the image to 150% */
     transition: all;
 }
+@media (min-width: 1024px) {
+    .menu {
+      justify-content: center; /* Center the buttons horizontally */
+    }
+  }
+  
+  
+  
