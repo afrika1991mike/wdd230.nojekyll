@@ -1,34 +1,46 @@
+// Get the current date and day of the week
 const date = new Date();
-const formatter = new Intl.DateTimeFormat('en', {month: 'long'});
-const month = formatter.format(new Date());
-const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-const copyright = document.querySelector('#copyright');
+const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const dayOfWeek = weekday[date.getDay()];
 
-let day = date.getDate();
-let year = date.getFullYear();
-let day_week = weekday[date.getDay()]
+// Define the announcement message
+const announcementMessage = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 PM';
 
-var announcement = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 PM'
-if (day_week == 'Monday') {
-    document.getElementById('announcement').innerText = announcement;
+// Check if today is Monday, Tuesday, or Wednesday
+if (["Monday", "Tuesday", "Wednesday"].includes(dayOfWeek)) {
+    // Create the banner
+    const banner = document.createElement('div');
+    banner.id = 'announcement-banner';
+    banner.innerHTML = `
+        <p>${announcementMessage}</p>
+        <button id="close-banner">❌ Close</button>
+    `;
+
+    // Append the banner to the `#announcement` element
+    const announcementElement = document.getElementById('announcement');
+    announcementElement.appendChild(banner);
+
+    // Add functionality to close the banner
+    document.getElementById('close-banner').addEventListener('click', () => {
+        banner.style.display = 'none';
+    });
 }
 
-// This arrangement can be altered based on how we want the date's format to appear.
-document.getElementById("current_date").innerText = `${day_week}, ${day} ${month} ${year}`;
+// Update the current date in the designated element
+document.getElementById("current_date").innerText = `${dayOfWeek}, ${date.getDate()} ${date.toLocaleString('default', { month: 'long' })} ${date.getFullYear()}`;
 
-copyright.textContent = `© ${new Date().getFullYear()}`;
-copyright1.textContent = `© ${new Date().getFullYear()}`;
-copyright2.textContent = `© ${new Date().getFullYear()}`;
+// Update the copyright year
+const currentYear = new Date().getFullYear();
+document.querySelectorAll('[id^="copyright"]').forEach(el => el.textContent = `© ${currentYear}`);
 
-let oLastModif = document.getElementById("lastupdate").innerText = document.lastModified;
-let oLastModif1 = document.getElementById("lastupdate1").innerText = document.lastModified;
-let oLastModif2 = document.getElementById("lastupdate2").innerText = document.lastModified;
+// Update the last modified date
+document.querySelectorAll('[id^="lastupdate"]').forEach(el => el.innerText = document.lastModified);
 
+// Toggle menu function
 function toggleMenu() {
     document.getElementById('primary-nav').classList.toggle('open');
     document.getElementById('hamburger-button').classList.toggle('open');
 }
 
-const x = document.getElementById('hamburger-button')
-x.onclick = toggleMenu;
-
+// Attach the toggle menu function to the hamburger button
+document.getElementById('hamburger-button').onclick = toggleMenu;

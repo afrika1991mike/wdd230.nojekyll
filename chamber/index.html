@@ -12,8 +12,15 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://afrika1991mike.github.io/wdd230/chamber/index.html"> 
     <meta property="og:image" content="https://afrika1991mike.github.io/wdd230/chamber/images/attraction1.webp">
+    <!-- Twitter Card Meta Tags  -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kigali Chamber of Commerce">
+    <meta name="twitter:description" content="Discover attractions, investment opportunities, events, and resources from Kigali Chamber of Commerce.">
+    <meta name="twitter:image" content="https://afrika1991mike.github.io/wdd230/chamber/images/attraction1.webp">
+    
         <link rel="stylesheet" href="styles/large.css">
         <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/normalise.css">
     </head>
 <body>
     <header>
@@ -46,23 +53,48 @@
         </div>
     </header>
     <main>
-        <div class="event">event goes here</div>
-    
+        <div class="event">
+            <div class="event"><p>Welcome to the Kigali Chamber of Commerce Site.
+                Here you can find current events, news stories, weather information, business spotlights, and membership information.
+                Please feel free to contact us if you have any questions or would like more information about how this website can benefit your business or organization.</p> </div>
+
         <!-- Hero section with hero image and call-to-action button -->
         <div class="featured">
             <img src="images/hero.webp" alt="Hero Image" class="hero-image">
-            <button class="cta-button" onclick="window.location.href='#'">Join the Chamber</button>
-
+            <button class="cta-button" onclick="window.location.href='join.html'">Join the Chamber</button>
+        
         </div>
-    
-        <div class="right-column">
-            <div class="spotlight1">spotlight goes here</div>
-            <div class="spotlight2">spotlight2 goes here</div>
-            <div class="spotlight3">spotlight3 goes here</div>
+        <div class="container">
+            <div class="right-column">
+                <div class="spotlight1">spotlight goes here</div>
+                <div class="spotlight2">spotlight2 goes here</div>
+                <div class="spotlight3">spotlight3 goes here</div>
+            </div>
+        
+            <div class="left-column">
+                <div class="weather">
+                    <h3>Kigali Current Weather</h3>
+                    <div id="current-weather">
+                        <img id="weather-icon" src="#" alt="Weather Icon">
+                        <span id="current-temp"></span>
+                    </div>
+                    <h3>Temperature Forecast</h3>
+                    <div class="forecast">
+                        <div class="forecast-container"></div>
+                    </div>
+                </div>
+        
+                <div class="news-update">
+                    <h3>News Release!</h3>
+                    <p>Batman Grayson Maxie Ra Aquaman Rhino Bane Tumbler Kyle Kobra Shrike, Caird Abdullah Nyssa Azrael Superman Owl Riddler Owl Hugo.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quo minima eius dolore omnis repudiandae in quam eaque, accusamus, neque magnam officiis vel alias architecto modi error vero cupiditate maxime, tempore itaque provident expedita consectetur incidunt rem. Quod, in? Libero distinctio eaque eligendi, est architecto culpa iure quod blanditiis dolor totam officia iusto voluptates accusamus fugit enim, ipsa, laboriosam praesentium! Quaerat rerum veritatis ullam eum ex, quod animi consequuntur voluptas fuga cumque adipisci vero magni aut quidem voluptatem quae quasi illo aperiam aliquid ad? Explicabo aliquam dicta accusantium, facilis laborum pariatur inventore. At reiciendis quis corrupti accusamus magni consectetur neque!</p>
+                </div>
+        
+                <div class="join_here">join information goes here</div>
+            </div>
         </div>
-        <div class="weather">weather goes here</div>
-        <div class="news-update">news update goes here</div>
-        <div class="join_here">join information goes here</div>
+        </div>
+        
     </main>
     
         <footer>
@@ -80,8 +112,12 @@
                     <p>📞(250)788711391</p>
                 <div class="map_container">
                     <div class="location_map">
-                        <a href="#"><img src="images/google-map.png" alt="google-map location icon"></a>
-                        <a href="#"><p>Location on Map</p></a>
+                        <a href="https://www.google.com/maps?q=Kigali,+Rwanda">
+                            <img src="images/google-map.png" alt="Google Map location icon">
+                          </a>
+                          <a href="https://www.google.com/maps?q=Kigali,+Rwanda">
+                            <p>Location on Map</p>
+                          </a>   
                     </div>
                 </div>
                 </div>
@@ -102,5 +138,7 @@
             </div></div>      
                 </footer>
     <script src="scripts/script.js"></script>
+    <script src="scripts/weatherForecast.js"></script>
+    <script  src="scripts/spotlight.js"></script>
 </body>
 </html>
